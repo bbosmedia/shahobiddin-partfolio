@@ -54,7 +54,7 @@ const HomeHero = () => {
 					environment.
 				</p>
 				<p className="text-center text-lg text-white block mt-6">
-					Temurbek Avazov
+					Shakhobiddin Shoazizov
 				</p>
 				<div className="flex items-center gap-3 mt-[51px] relative"></div>
 			</div>

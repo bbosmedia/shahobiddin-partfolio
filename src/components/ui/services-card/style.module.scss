@@ -1,0 +1,57 @@
+.serviceCard {
+	@apply p-[2px] rounded-lg  relative overflow-hidden feedback-card-gradient;
+
+	&.dark {
+		@apply feedback-card-gradient-dark;
+	}
+
+	.serviceCardBorder {
+		@apply w-[calc(100%+500px)] h-[calc(100%+500px)] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-[7000] ease-linear;
+	}
+
+	.serviceCardSphere {
+		@apply absolute h-[80px] w-[80px] rounded-full blur-[40px] bg-black opacity-50;
+	}
+
+	&.dark {
+		.serviceCardSphere {
+			@apply bg-white;
+		}
+	}
+
+	&:hover {
+		.serviceCardBorder {
+			background-image: conic-gradient(
+				#000 0deg,
+				transparent 40deg,
+				transparent 180deg
+			);
+			animation: animateborder 1.5s infinite linear;
+		}
+	}
+
+	&.dark {
+		&:hover {
+			.serviceCardBorder {
+				background-image: conic-gradient(
+					#fff 0deg,
+					transparent 40deg,
+					transparent 180deg
+				);
+				animation: animateborder 5.5s infinite linear;
+			}
+		}
+	}
+}
+
+@keyframes animateborder {
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	99.999% {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+}
