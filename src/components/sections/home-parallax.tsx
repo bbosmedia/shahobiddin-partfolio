@@ -107,7 +107,7 @@ const SlideImage = ({ item }: { item: string }) => {
 				src={item}
 				fill
 				className="object-cover"
-				alt="Temurbek Avazov"
+				alt="Shakhobiddin Shoazizov"
 			/>
 		</div>
 	);

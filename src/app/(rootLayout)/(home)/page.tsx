@@ -5,6 +5,7 @@ import Lenis from "lenis";
 import Services from "@/components/sections/services";
 import GallerySection from "@/components/sections/galley-section";
 import HomeParallax from "@/components/sections/home-parallax";
+import PortfolioSection from "@/components/sections/portolio-section";
 
 const Home = () => {
 	useEffect(() => {
@@ -22,6 +23,7 @@ const Home = () => {
 		<>
 			<HomeHero />
 			<GallerySection />
+			<PortfolioSection />
 			<Services />
 			<HomeParallax />
 		</>

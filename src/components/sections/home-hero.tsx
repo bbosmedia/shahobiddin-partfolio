@@ -3,6 +3,7 @@ import { useGSAP } from "@gsap/react";
 import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 const HomeHero = () => {
 	const sectionRef = useRef<HTMLDivElement>(null);
@@ -26,12 +27,11 @@ const HomeHero = () => {
 			ref={sectionRef}
 			className="h-full min-h-screen md:py-[120px] py-20 relative overflow-hidden bg-black md:pb-[38px] flex items-center justify-center"
 		>
-			<video
-				className="object-cover h-full w-full absolute top-0 left-0"
-				src="/videos/home-hero.mp4"
-				autoPlay
-				muted
-				loop
+			<Image
+				fill
+				src="/images/hero.webp"
+				alt="Shoazizov Architects"
+				className='object-cover object-center'
 			/>
 
 			<div
@@ -45,8 +45,8 @@ const HomeHero = () => {
 				ref={contentRef}
 				className="flex justify-center items-center flex-col px-5 relative w-max mx-auto md:w-full z-[2]"
 			>
-				<h1 className="home-heading-text md:text-6xl font-medium max-w-[1000px]  w-full text-center gradient-text-light dark:gradient-text relative text-3xl text-white">
-					Exclusive Interior and Exterior Solutions
+				<h1 className="home-heading-text md:text-6xl font-medium max-w-[1000px]  w-full text-center gradient-text-light dark:gradient-text relative text-3xl text-white uppercase">
+					Shoazizov Architects
 				</h1>
 				<p className="block max-w-[632px] w-full text-center text-white/50 font-medium text-lg mt-4">
 					With a passion for design and a commitment to excellence, I deliver
