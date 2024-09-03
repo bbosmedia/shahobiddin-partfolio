@@ -6,17 +6,17 @@ import styles from "./styles.module.scss";
 
 const GallerySection = () => {
 	const images: string[] = [
-		"/images/home-slider/1.webp",
-		"/images/home-slider/2.webp",
-		"/images/home-slider/3.webp",
-		"/images/home-slider/4.webp",
-		"/images/home-slider/5.webp",
-		"/images/home-slider/6.webp",
-		"/images/home-slider/7.webp",
-		"/images/home-slider/8.webp",
-		"/images/home-slider/9.webp",
-		"/images/home-slider/10.webp",
-		"/images/home-slider/11.webp",
+		"/images/works/interior/3/1.webp",
+		"/images/works/interior/1/10.webp",
+		"/images/works/interior/1/3.webp",
+		"/images/works/interior/3/2.webp",
+		"/images/works/interior/2/1.webp",
+		"/images/works/interior/2/2.webp",
+		"/images/works/interior/3/4.webp",
+		"/images/works/interior/2/5.webp",
+		"/images/works/interior/3/11.webp",
+		"/images/works/interior/3/5.webp",
+		"/images/works/interior/1/11.webp",
 	];
 	const gallery = useRef<HTMLDivElement>(null);
 	const [dimension, setDimension] = useState<{
