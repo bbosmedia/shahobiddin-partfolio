@@ -1,8 +1,7 @@
 import { NAV_LINKS } from "@/constants/global";
 import Link from "next/link";
 import React from "react";
-import NavbarLink from '../ui/nav-link'
-
+import NavbarLink from "../ui/nav-link";
 
 const Footer = () => {
 	return (
@@ -29,7 +28,7 @@ const Footer = () => {
 							aria-label="Home"
 							className="text-white uppercase text-xl font-bold"
 						>
-							TIM
+							SHOAZIZOV
 						</Link>
 						<span className="text-white/50 text-sm max-w-[400px] block mt-4">
 							Experienced interior and exterior designer offering personalized
