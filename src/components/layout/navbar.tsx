@@ -9,7 +9,8 @@ import React, { useState } from "react";
 
 import { NAV_LINKS } from "@/constants/global";
 import { cn } from "@/lib/utils/cn";
-import NavbarLink from '../ui/nav-link'
+import NavbarLink from "../ui/nav-link";
+import Link from "next/link";
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
@@ -48,7 +49,12 @@ const Navbar = () => {
 				className="fixed top-5 left-0 ring-0 mx-auto    z-[9999999] flex items-center flex-col justify-center px-6 transition-all duration-200 w-full"
 			>
 				<div className=" border border-white/10 rounded-lg bg-white/10 backdrop-blur-[200px] py-3 flex items-center w-full max-w-[760px] justify-between px-6">
-					<span className="text-white">SHOAZIZOV</span>
+					<Link
+						href="/"
+						className="text-white"
+					>
+						SHOAZIZOV
+					</Link>
 					<nav className="md:flex hidden items-center gap-6">
 						{NAV_LINKS.map(item => (
 							<NavbarLink

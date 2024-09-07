@@ -9,8 +9,8 @@ export const NAV_LINKS: NavLinkProp[] = [
 		name: "Portfolio",
 		link: "/portfolio",
 	},
-	{
-		name: "Contact",
-		link: "/contact",
-	},
+	// {
+	// 	name: "Contact",
+	// 	link: "/contact",
+	// },
 ];

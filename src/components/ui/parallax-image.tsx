@@ -54,7 +54,7 @@ const ParallaxImage: React.FC<ParallaxImageProps> = ({ src, alt, link }) => {
 				alt={`${alt} - Shoazizov Architects`}
 			/>
 			<div className="absolute top-0 left-0 h-full w-full bg-black/20 flex items-center justify-center z-[2] transition-all duration-200 group-hover:translate-y-0 ease-linear p-6">
-				<span className="text-white text-3xl md:text-4xl">Interior Design</span>
+				<span className="text-white text-3xl md:text-4xl">{alt}</span>
 			</div>
 		</div>
 	);
