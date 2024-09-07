@@ -9,7 +9,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
 			<Navbar />
 			<main className="min-h-screen">{children}</main>
 			<Footer />
-			<ContactSection />
+			{/* <ContactSection /> */}
 		</>
 	);
 };
