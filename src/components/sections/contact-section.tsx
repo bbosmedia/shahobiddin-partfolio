@@ -47,13 +47,16 @@ const ContactSection = () => {
 					}
 				)}
 			>
-				<video
-					src="https://resend.com/static/landing-page/3d-integrate-afternoon.mp4"
-					className="h-[100px] w-[100px] rounded-2xl"
-					loop
-					autoPlay
-					muted
-				/>
+				<div className="relative">
+					<video
+						src="https://resend.com/static/landing-page/3d-integrate-afternoon.mp4"
+						className="h-[100px] w-[100px] rounded-2xl"
+						loop
+						autoPlay
+						muted
+					/>
+					<div className="h-full w-full absolute top-0 left-0"></div>
+				</div>
 			</button>
 			<div
 				className={cn(
