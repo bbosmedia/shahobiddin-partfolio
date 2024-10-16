@@ -48,12 +48,13 @@ const Footer = () => {
 				<div className="flex items-center justify-between gap-6 flex-col md:flex-row">
 					<p className="text-white/50 text-sm font-light max-md:text-center">
 						Copyright {new Date().getFullYear()} TIM. Site made by{" "}
-						<a
-							href=""
+						<Link
+							target="_blank"
+							href="https://abbos-portfolio.vercel.app/"
 							className="font-semibold text-white"
 						>
 							Abbos Nurgulshanov
-						</a>
+						</Link>
 					</p>
 					<ul className="flex items-center gap-6">
 						{FOOTER_LINKS.map(item => (
