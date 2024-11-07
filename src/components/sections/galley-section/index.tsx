@@ -48,7 +48,7 @@ const GallerySection = () => {
 		};
 	}, []);
 	return (
-		<section>
+		<section className='md:block hidden'>
 			<div
 				ref={gallery}
 				className={styles.gallery}
