@@ -23,7 +23,7 @@ export default function RootLayout({
 					async={true}
 					src={`https://www.googletagmanager.com/gtag/js?id=G-MFTK1GKZ42`}
 				/>
-		
+
 				<Script
 					id='google-analytics'
 					dangerouslySetInnerHTML={{
@@ -35,10 +35,7 @@ export default function RootLayout({
 					}}
 				/>
 			</head>
-			<body className={inter.className}>
-				
-				{children}
-			</body>
+			<body className={inter.className}>{children}</body>
 		</html>
 	);
 }
