@@ -76,15 +76,15 @@ const Footer = () => {
 
 const FOOTER_LINKS = [
 	{
-		href: "https://www.upwork.com/freelancers/~0193ea5cc59783bf10",
+		href: "https://www.upwork.com/freelancers/~01511a379fdf491eb9",
 		name: "Upwork",
 	},
 	{
-		href: "https://www.instagram.com/tim.interior",
+		href: "https://www.instagram.com/shoazizovarchitects",
 		name: "Instagram",
 	},
 	{
-		href: "https://www.behance.net/Temur_Avazov",
+		href: "https://www.behance.net/shahobishoaziz",
 		name: "Behance",
 	},
 ];
