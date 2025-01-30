@@ -36,13 +36,13 @@ const Footer = () => {
 							Contact me today for a consultation.
 						</span>
 					</div>
-					<ul className='flex flex-col items-center gap-4 max-md:items-start'>
+					<div className='flex flex-col items-center gap-4 max-md:items-start'>
 						{NAV_LINKS.map(item => (
-							<li key={item.link + 'footer'}>
-								<NavbarLink {...item} />
-							</li>
+						
+								<NavbarLink key={item.link + 'footer'} {...item} />
+							
 						))}
-					</ul>
+					</div>
 				</div>
 				<div className='flex items-center justify-between gap-6 flex-col md:flex-row'>
 					<p className='text-white/50 text-sm font-light max-md:text-center'>
