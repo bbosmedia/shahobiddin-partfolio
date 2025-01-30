@@ -98,6 +98,8 @@ const Column = ({
 							src={src}
 							alt="Shalhobiddin Shoazizov"
 							fill
+							objectFit='cover'
+							priority
 						/>
 					</div>
 				);

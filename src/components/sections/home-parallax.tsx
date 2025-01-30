@@ -106,7 +106,8 @@ const SlideImage = ({ item }: { item: string }) => {
 			<Image
 				src={item}
 				fill
-				className="object-cover"
+				objectFit='cover'
+				priority
 				alt="Shakhobiddin Shoazizov"
 			/>
 		</div>

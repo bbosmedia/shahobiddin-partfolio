@@ -29,6 +29,8 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
 								className='w-full h-auto'
 								src={image}
 								alt='Shoazizov Architects'
+								priority
+								loading='lazy'
 								height={2000}
 								width={1600}
 							/>

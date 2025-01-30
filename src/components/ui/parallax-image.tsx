@@ -49,7 +49,9 @@ const ParallaxImage: React.FC<ParallaxImageProps> = ({ src, alt, link }) => {
 			<Image
 				ref={imageRef}
 				fill
-				className="object-cover"
+				objectFit='cover'
+				priority
+				loading='lazy'
 				src={src}
 				alt={`${alt} - Shoazizov Architects`}
 			/>
