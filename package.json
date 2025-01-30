@@ -1,35 +1,33 @@
 {
-  "name": "shahobiddin-partfolio",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@gsap/react": "^2.1.1",
-    "clsx": "^2.1.1",
-    "formik": "^2.4.6",
-    "framer-motion": "^11.3.31",
-    "gsap": "^3.12.5",
-    "lenis": "^1.1.13",
-    "next": "14.2.7",
-    "react": "^18",
-    "react-dom": "^18",
-    "sass": "^1.77.8",
-    "tailwind-merge": "^2.5.2",
-    "yup": "^1.4.0"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.7"
-  }
+	"name": "shahobiddin-partfolio",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@gsap/react": "^2.1.2",
+		"clsx": "^2.1.1",
+		"framer-motion": "^12.0.6",
+		"gsap": "^3.12.7",
+		"lenis": "^1.1.20",
+		"next": "15.1.6",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"sass": "^1.77.8",
+		"tailwind-merge": "^2.6.0"
+	},
+	"devDependencies": {
+		"typescript": "^5",
+		"@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+		"postcss": "^8",
+		"tailwindcss": "^3.4.1",
+		"eslint": "^8",
+		"eslint-config-next": "14.2.7"
+	}
 }
