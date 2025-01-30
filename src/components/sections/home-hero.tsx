@@ -1,13 +1,10 @@
 'use client';
 import { useGSAP } from '@gsap/react';
-import React, { useRef } from 'react';
+import React, { lazy, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import dynamic from 'next/dynamic';
 
-const HomeHeroBg = dynamic(() => import('./home-hero-bg'), {
-	loading: () => <></>,
-});
+const HomeHeroBg = lazy(() => import('./home-hero-bg'));
 
 const HomeHero = () => {
 	const sectionRef = useRef<HTMLDivElement>(null);
@@ -38,13 +35,12 @@ const HomeHero = () => {
 				ref={contentRef}
 				className='flex justify-center items-center flex-col px-5 relative w-max mx-auto md:w-full z-[2]'
 			>
-				<h1 className='home-heading-text md:text-6xl font-medium max-w-[1000px]  w-full text-center gradient-text-light dark:gradient-text relative text-3xl text-white uppercase'>
+				<h1 className='home-heading-text md:text-6xl font-medium   w-full text-center gradient-text-light dark:gradient-text relative text-3xl text-white uppercase'>
 					Shoazizov Architects
 				</h1>
 				<p className='block max-w-[632px] w-full text-center text-white/50 font-medium text-lg mt-4'>
-					With a passion for design and a commitment to excellence, I deliver
-					innovative and timeless solutions that elevate your living or working
-					environment.
+					I create beautiful and practical designs to improve your home or
+					workspace.
 				</p>
 				<p className='text-center text-lg text-white block mt-6'>
 					Shakhobiddin Shoazizov

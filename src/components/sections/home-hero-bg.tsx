@@ -22,7 +22,6 @@ const HomeHeroBg = () => {
 				src='/images/hero.webp'
 				alt='Shoazizov Architects'
 				objectFit='cover'
-				priority
 			/>
 
 			<div
