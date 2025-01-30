@@ -107,7 +107,6 @@ const SlideImage = ({ item }: { item: string }) => {
 				src={item}
 				fill
 				objectFit='cover'
-				priority
 				alt="Shakhobiddin Shoazizov"
 			/>
 		</div>

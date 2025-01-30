@@ -50,8 +50,6 @@ const ParallaxImage: React.FC<ParallaxImageProps> = ({ src, alt, link }) => {
 				ref={imageRef}
 				fill
 				objectFit='cover'
-				priority
-				loading='lazy'
 				src={src}
 				alt={`${alt} - Shoazizov Architects`}
 			/>
