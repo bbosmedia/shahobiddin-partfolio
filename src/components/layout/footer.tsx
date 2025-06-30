@@ -46,7 +46,7 @@ const Footer = () => {
 				</div>
 				<div className='flex items-center justify-between gap-6 flex-col md:flex-row'>
 					<p className='text-white/50 text-sm font-light max-md:text-center'>
-						Copyright {new Date().getFullYear()} TIM. Site made by{' '}
+						Copyright {new Date().getFullYear()} Shoazizov. Site made by{' '}
 						<Link
 							target='_blank'
 							href='https://abbos-portfolio.vercel.app/'
