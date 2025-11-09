@@ -4,6 +4,7 @@ import Services from '@/components/sections/services';
 import GallerySection from '@/components/sections/galley-section';
 import HomeParallax from '@/components/sections/home-parallax';
 import PortfolioSection from '@/components/sections/portolio-section';
+import Videos from '@/components/sections/videos';
 
 const Home = () => {
 	return (
@@ -11,6 +12,7 @@ const Home = () => {
 			<HomeHero />
 			<GallerySection />
 			<PortfolioSection />
+			<Videos />
 			<Services />
 			<HomeParallax />
 		</>
