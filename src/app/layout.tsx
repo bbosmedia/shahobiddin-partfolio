@@ -4,6 +4,7 @@ import "./globals.css";
 import Script from "next/script";
 import FlagshipProvider from "@/components/layout/flagship-provider";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
