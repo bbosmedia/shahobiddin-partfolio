@@ -1,7 +1,7 @@
 "use client";
 import { motion, MotionValue, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
+import  { useEffect, useRef, useState } from "react";
 import styles from "./styles.module.scss";
 
 const GallerySection = () => {

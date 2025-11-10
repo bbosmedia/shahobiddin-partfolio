@@ -46,7 +46,7 @@ const Navbar = () => {
 				transition={{
 					duration: 0.3,
 				}}
-				className='fixed top-5 left-0 ring-0 mx-auto    z-[9999999] flex items-center flex-col justify-center px-6 transition-all duration-200 w-full'
+				className='fixed top-5 left-0 ring-0 mx-auto    z-5 flex items-center flex-col justify-center px-6 transition-all duration-200 w-full'
 			>
 				<div className=' border border-white/10 rounded-lg bg-white/10 backdrop-blur-[200px] py-3 flex items-center w-full max-w-[760px] justify-between px-6'>
 					<Link

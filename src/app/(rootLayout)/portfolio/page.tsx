@@ -1,32 +1,48 @@
-"use client"
+"use client";
 import Container from "@/components/ui/container";
 import Heading from "@/components/ui/heading";
 import React, { useEffect } from "react";
-import data from "@/data/porfolio.json"
-import ParallaxImage from '@/components/ui/parallax-image'
-import Services from '@/components/sections/services'
-import HomeParallax from '@/components/sections/home-parallax'
-import Lenis from "lenis"
+import data from "@/data/porfolio.json";
+import ParallaxImage from "@/components/ui/parallax-image";
+import Services from "@/components/sections/services";
+import HomeParallax from "@/components/sections/home-parallax";
+import Lenis from "lenis";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 const Page = () => {
 	useEffect(() => {
-		const lenis = new Lenis();
+		const lenis = new Lenis({
+			duration: 0.5,
+			easing: (t) => 1 - Math.pow(1 - t, 3),
+			smoothWheel: true,
+		});
 
-		function raf(time: number) {
-			lenis.raf(time);
+		// Expose lenis globally
+		if (window) {
+			window.lenis = lenis;
+
+			lenis.on("scroll", ScrollTrigger.update);
+
+			function raf(time: number) {
+				lenis.raf(time);
+				requestAnimationFrame(raf);
+			}
 
 			requestAnimationFrame(raf);
 		}
 
-		requestAnimationFrame(raf);
+		return () => {
+			lenis.destroy();
+			delete window.lenis;
+		};
 	}, []);
 	return (
 		<>
 			<Container className="md:pt-[160px] pt-[120px]">
 				<Heading
 					variant="h2"
-					className="text-white mb-10 block"
-				>
+					className="text-white mb-10 block">
 					Designing Beautiful Spaces
 				</Heading>
 				<p className="block max-w-2xl max-md:text-sm mt-2 text-white/50">

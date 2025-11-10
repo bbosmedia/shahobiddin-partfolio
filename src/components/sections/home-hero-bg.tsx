@@ -1,19 +1,35 @@
 'use client';
 import Image from 'next/image';
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import Lenis from 'lenis';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const HomeHeroBg = () => {
 	useEffect(() => {
-		const lenis = new Lenis();
+		const lenis = new Lenis({
+			duration: 0.5,
+			easing: (t) => 1 - Math.pow(1 - t, 3),
+			smoothWheel: true,
+		});
 
-		function raf(time: number) {
-			lenis.raf(time);
+		// Expose lenis globally
+		if(window){
+			window.lenis = lenis;
+
+			lenis.on("scroll", ScrollTrigger.update);
+
+			function raf(time: number) {
+				lenis.raf(time);
+				requestAnimationFrame(raf);
+			}
 
 			requestAnimationFrame(raf);
 		}
 
-		requestAnimationFrame(raf);
+		return () => {
+			lenis.destroy();
+			delete window.lenis;
+		};
 	}, []);
 	return (
 		<>
